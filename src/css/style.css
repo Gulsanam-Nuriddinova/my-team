@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to right, #0B60B0, #40A578);}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    display: inline-block;
+}
+
+span {
+    display: inline-block;
+}
+
+button {
+    background: transparent;
+}
+
+.container {
+    max-width: 100%;
+    width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1{
+    text-align: center;
+    color: #F8F9FA;
+    font-size: 70px;
+    text-shadow: 2px 2px 5px rgba(211, 189, 189, 0.364); 
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    margin-left:100px ;
+    gap: 50px;
+    margin-bottom: 140px;
+}
+
+.page-text{
+    width: 700px;
+}
+
+.page-text h2{
+    font-size: 40px;
+    color: #DFF6FF;
+    margin-bottom: 50px;
+}
+
+.page-text h3{
+    font-size: 35px;
+    color: #DFF6FF;
+}
+
+.section2{
+    display: flex;
+    align-items: center;
+    margin-left:100px ;
+    gap: 100px;
+    margin-bottom: 140px;
+}
+
+.section3{
+    display: flex;
+    align-items: center;
+    margin-left:100px ;
+    gap: 50px;
+    margin-bottom: 140px;
+}
+
+.section4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 140px;
+    margin-left: 140px;
+   gap: 20px;
+}
+
+.box1{
+    width: 1150px;
+    height: 165px;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-radius: 13px;
+    color: #DFF6FF;
+font-size: 19px;
+margin-bottom:25px;
+
+}
+
+.box1 img{
+    width: 240px;
+    height: 150px;
+    border-radius: 13px;
+}
+
+.muqaddima{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.box-text-m{
+    width: 650px;
+    padding: 0 20px;
+}
+
+.box-text-m h3{
+    color: #DFF6FF;
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+.list{
+    list-style: circle;
+    flex-direction: column;
+    gap: 20px;
+}
+
+img{
+    border-radius: 26px;
+}
+
+.list li{
+    color: #DFF6FF;
+    margin-bottom: 20px;
+}
+
+.list li p{
+    font-size: 25px;
+}
+
+.back-button {
+    position: fixed; 
+    left: 20px; 
+    bottom: 20px; 
+    background-color: rgba(0, 0, 0, 0.062); 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 50px; 
+    font-size: 14px; 
+    text-decoration: none; 
+    text-align: center;
+    transition: background-color 0.3s ease; 
+}
+
+.back-button:hover {
+    background-color: rgba(0, 0, 0, 0.9); 
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    .section, .section2, .section3, .section4 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        gap: 30px;
+    }
+
+    .page-text {
+        width: 90%;
+    }
+
+    .box1 {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box1 img {
+        width: 100%;
+        max-width: 300px; 
+        height: auto;
+    }
+
+    .muqaddima {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .box-text-m {
+        width: 90%;
+    }
+
+   
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .page-text h2 {
+        font-size: 30px;
+    }
+
+    .page-text h3 {
+        font-size: 28px;
+    }
+
+    .box1 {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .list li p {
+        font-size: 20px;
+    }
+
+    .section, .section2, .section3, .section4 {
+        gap: 20px;
+    }
+
+    
+    img {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .page-text h2 {
+        font-size: 24px;
+    }
+
+    .page-text h3 {
+        font-size: 22px;
+    }
+
+    .box1 {
+        gap: 10px;
+    }
+
+    .list li p {
+        font-size: 18px;
+    }
+
+    
+    img {
+        max-width: 85%;
+        height: auto;
+    }
+}
