@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 300px;
+    margin-bottom: 20px; /* Quyidagi blok bilan oraliq */
+    margin-top: -30px; /* Tepaga chiqarish */
+}
+
+.list-group-item {
+    padding: 10px 15px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    transition: background 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+}
+
+.list-group-item-a {
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Pastdagi matn bloki */
+.text {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    font-size: 14px;
+}
+
+.a {
+    margin-top: 15px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+.back-button {
+    position: fixed; 
+    left: 20px; 
+    bottom: 20px; 
+    background-color: rgba(0, 0, 0, 0.062); 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 50px; 
+    font-size: 14px; 
+    text-decoration: none; 
+    text-align: center;
+    transition: background-color 0.3s ease; 
+}
+
+.back-button:hover {
+    background-color: rgba(0, 0, 0, 0.9); 
+}
+
+
+/* Mobil moslashuv */
+@media (max-width: 400px) {
+    .list-group, .text {
+        width: 100%;
+        max-width: 90%;
+    }
+}

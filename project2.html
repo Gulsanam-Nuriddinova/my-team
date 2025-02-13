@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quyosh Energiya Loyihasi</title>
+    <link rel="stylesheet" href="./src/css/project2.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        a, .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 10px;
+            text-align: center;
+        }
+
+        a:hover, .back-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://quyosh-energiyasida-mash-nm89j5g.gamma.site/">Ko'rish</a>
+
+    <button onclick="goBack()" class="back-btn">⬅️ Orqaga</button>
+
+    <script>
+    function goBack() {
+        if (document.referrer) {
+            window.history.back(); // Agar oldingi sahifa bo'lsa, unga qaytadi
+        } else {
+            window.location.href = "index.html"; // Agar yo'q bo'lsa, asosiy sahifaga yo'naltiradi
+        }
+    }
+    </script>
+
+</body>
+</html>
