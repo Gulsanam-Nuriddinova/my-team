@@ -9,48 +9,66 @@
         body {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
             background-color: #f8f9fa;
             font-family: Arial, sans-serif;
         }
+    
+        /* Orqaga tugma */
+        .back-btn {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: none;
+}
 
-        a, .back-btn {
-            display: inline-block;
-            text-decoration: none;
-            color: white;
-            background-color: #007bff;
-            padding: 10px 15px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-            margin: 10px;
-            text-align: center;
+.back-btn:hover {
+    background: linear-gradient(135deg, #ff4e8a, #ff3b6f);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+    
+        /* iframe to'liq ekranda */
+        .iframe-container {
+            width: 100%;
+            height: 100%;
         }
-
-        a:hover, .back-btn:hover {
-            background-color: #0056b3;
+    
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
-</head>
-<body>
+      <div class="iframe-container">
+        <iframe src="https://quyosh-energiyasida-mash-nm89j5g.gamma.site/" width="100%" height="100%"></iframe>
 
-    <a href="https://quyosh-energiyasida-mash-nm89j5g.gamma.site/" target="_blank">Ko'rish</a>
+        <button onclick="goBack()" class="back-btn">⬅️</button>
+          </div>
+      
+   
 
-    <button onclick="goBack()" class="back-btn">⬅️ Orqaga</button>
-
-    <script>
-    function goBack() {
-        if (document.referrer) {
-            window.history.back(); // Agar oldingi sahifa bo'lsa, unga qaytadi
-        } else {
-            window.location.href = "index.html"; // Agar yo'q bo'lsa, asosiy sahifaga yo'naltiradi
-        }
-    }
-    </script>
+          <script>
+            function goBack() {
+                if (window.history.length > 1) {
+                    window.history.back(); // Agar oldingi sahifa bo‘lsa, unga qaytadi
+                } else {
+                    window.location.href = "index.html"; // Agar yo‘q bo‘lsa, asosiy sahifaga yo‘naltiradi
+                }
+            }
+        </script>
 
 </body>
 </html>
